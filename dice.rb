@@ -41,12 +41,11 @@ get("/dice/2/10") do
 end
 
 get("/dice/1/20") do
-  @first_die = rand(1..20)
-  sum = first_die
+  @die = rand(1..20)
 
-  @outcome = "You rolled a #{first_die} for a total of #{sum}."
+    @outcome = "You rolled a #{die}."
 
-  erb(:one_twenty)
+    erb(:one_twenty)
 end
 
 get("/dice/5/4") do
