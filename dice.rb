@@ -59,6 +59,7 @@ get("/dice/5/4") do
   @outcome = "You rolled a #{first_die}, a #{second_die}, a #{third_die}, a #{fourth_die}, and a #{fifth_die} for a total of #{sum}."
 
   erb(:five_four)
+end
 
 get("/dice/100/6") do
   @rolls = []
@@ -70,5 +71,4 @@ get("/dice/100/6") do
   end
 
   erb(:one_hundred_six)
-
 end
